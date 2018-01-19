@@ -58,6 +58,7 @@ extension Droplet {
             guard let price = Double((req.data["price"]?.string)!) else {return "failure"}
             guard let description = req.data["description"]?.string else {return "failure"}
            
+            print(req.data)
             guard let fileData = req.formData?["image"]?.part.body else {
                 return "failure"
             }
