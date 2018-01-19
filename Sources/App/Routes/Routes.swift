@@ -76,7 +76,7 @@ extension Droplet {
             }
             
             try Item(itemName: itemName, price: price, description: description, pictUrl: imageName).save()
-            return "Success"
+            return "\(workPath)\(imageFolder)\(imageName)"
         }
         
     }
